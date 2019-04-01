@@ -10,7 +10,6 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *Put your name here*
-* ID: *Put your ID here*
-
+* Name: Dang Minh Duc
+* ID: Bi8-047
 
