@@ -1,0 +1,88 @@
+duc@duc-VirtualBox:~$ echo hello world
+hello world
+
+duc@duc-VirtualBox:~$ passwd
+
+Changing password for duc.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+duc@duc-VirtualBox:~$ date
+
+2019年 04月 01日 星期一 11:08:51 CST
+
+duc@duc-VirtualBox:~$ hostname
+duc-VirtualBox
+
+duc@duc-VirtualBox:~$ arch
+x86_64
+
+duc@duc-VirtualBox:~$ uname -a
+Linux duc-VirtualBox 3.16.0-30-generic #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+duc@duc-VirtualBox:~$ dmesg
+
+[   48.393284] 02:51:51.589895 main     Log opened 2019-04-01T02:51:51.588804000Z
+[   48.393354] 02:51:51.590006 main     OS Product: Linux
+[   48.393379] 02:51:51.590039 main     OS Release: 3.16.0-30-generic
+[   48.393402] 02:51:51.590063 main     OS Version: #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015
+[   48.393433] 02:51:51.590086 main     Executable: /opt/VBoxGuestAdditions-6.0.4/sbin/VBoxService
+[   48.393433] 02:51:51.590087 main     Process ID: 1966
+[   48.393433] 02:51:51.590088 main     Package type: LINUX_64BITS_GENERIC
+[   48.395514] 02:51:51.592146 main     6.0.4 r128413 started. Verbose level = 0
+[   48.397233] 02:51:51.593873 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+[   48.483920] init: plymouth-stop pre-start process (2018) terminated with status 1
+[  153.507557] systemd-hostnamed[2150]: Warning: nss-myhostname is not installed. Changing the local hostname might make it unresolveable. Please install nss-myhostname!
+
+duc@duc-VirtualBox:~$ uptime
+
+ 11:13:37 up 22 min,  2 users,  load average: 0.06, 0.10, 0.13
+
+duc@duc-VirtualBox:~$ who am i
+
+duc      pts/0        2019-04-01 10:53 (:0)
+
+duc@duc-VirtualBox:~$ whoami
+duc
+duc@duc-VirtualBox:~$ who
+
+duc      :0           2019-04-01 10:52 (:0)
+duc      pts/0        2019-04-01 10:53 (:0)
+
+duc@duc-VirtualBox:~$ id
+
+uid=1000(duc) gid=1000(duc) groups=1000(duc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lpadmin),124(sambashare)
+
+duc@duc-VirtualBox:~$ last
+
+duc      pts/0        :0               Mon Apr  1 10:53   still logged in   
+duc      :0           :0               Mon Apr  1 10:52   still logged in   
+reboot   system boot  3.16.0-30-generi Mon Apr  1 10:52 - 11:14  (00:21)    
+duc      :0           :0               Mon Apr  1 10:13 - crash  (00:38)    
+reboot   system boot  3.16.0-30-generi Mon Apr  1 10:13 - 11:14  (01:00)    
+reboot   system boot  3.16.0-30-generi Mon Apr  1 10:11 - 11:14  (01:02)    
+duc      pts/0        :0               Thu Mar 28 16:17 - 16:17  (00:00)    
+duc      :0           :0               Thu Mar 28 09:39 - down   (06:38)    
+reboot   system boot  3.16.0-30-generi Thu Mar 28 09:39 - 16:17  (06:38)    
+duc      pts/5        :0               Thu Mar 28 09:36 - down   (00:02)    
+duc      :0           :0               Thu Mar 28 09:35 - down   (00:03)    
+reboot   system boot  3.16.0-30-generi Thu Mar 28 09:35 - 09:38  (00:03)    
+
+wtmp begins Thu Mar 28 09:35:47 2019
+
+duc@duc-VirtualBox:~$ finger
+
+The program 'finger' is currently not installed. You can install it by typing:
+sudo apt-get install finger
+
+duc@duc-VirtualBox:~$ w
+
+ 11:16:47 up 25 min,  2 users,  load average: 0.04, 0.09, 0.13
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+duc      :0       :0               10:52   ?xdm?  49.40s  0.15s init --user
+duc      pts/0    :0               10:53    7.00s  0.09s  0.00s w
+
+
+
