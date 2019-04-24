@@ -1,0 +1,16 @@
+duc@duc-Inspiron-5570:~$ free
+\              total        
+Mem:       12191408     
+Swap:      14648316 
+
+
+duc@duc-Inspiron-5570:~$ wc -l /etc/passwd
+42 /etc/passwd
+
+duc@duc-Inspiron-5570:~$ cat /proc/cpuinfo | grep processor | wc -l
+8
+
+duc@duc-Inspiron-5570:~$ find . -name "*.jpg" | wc -l
+0
+duc@duc-Inspiron-5570:~$ grep 'list' ./
+grep: ./: Is a directory
