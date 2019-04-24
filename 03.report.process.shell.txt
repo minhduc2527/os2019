@@ -1,0 +1,59 @@
+duc@duc-Inspiron-5570:~$ ps aux
+
+root      6588  0.0  0.0      0     0 ?        I    09:32   0:00 [kworker/2:0]
+root      6603  0.0  0.0      0     0 ?        I    09:33   0:00 [kworker/5:2]
+root      6608  0.0  0.0      0     0 ?        I    09:34   0:00 [kworker/6:1]
+root      6611  0.0  0.0      0     0 ?        I    09:35   0:00 [kworker/7:2]
+root      6616  0.0  0.0      0     0 ?        I    09:35   0:00 [kworker/3:0]
+root      6635  0.0  0.0      0     0 ?        I    09:36   0:00 [kworker/u16:0]
+root      6657  0.0  0.0      0     0 ?        I    09:37   0:00 [kworker/4:0]
+root      6677  0.0  0.0      0     0 ?        I    09:39   0:00 [kworker/5:0]
+root      6678  0.0  0.0      0     0 ?        I    09:39   0:00 [kworker/2:2]
+root      6681  0.0  0.0      0     0 ?        I    09:39   0:00 [kworker/6:0]
+duc       6683  1.0  0.2 663904 36152 ?        Sl   09:39   0:00 gedit
+duc       6693  2.0  0.0  45960  3644 pts/2    R+   09:40   0:00 ps aux
+
+duc@duc-Inspiron-5570:~$ gnome-calculator
+
+** (gnome-calculator:6738): WARNING **: currency.vala:407: Currency SAR is not provided by IMF or ECB
+
+** (gnome-calculator:6738): WARNING **: currency.vala:407: Currency TND is not provided by IMF or ECB
+
+** (gnome-calculator:6738): WARNING **: currency.vala:407: Currency TTD is not provided by IMF or ECB
+
+** (gnome-calculator:6738): WARNING **: currency.vala:407: Currency UYU is not provided by IMF or ECB
+
+** (gnome-calculator:6738): WARNING **: currency.vala:407: Currency VEF is not provided by IMF or ECB
+
+
+duc@duc-Inspiron-5570:~$ ps aux | grep gnome-calculator
+duc       6837  0.0  0.0  22820  1084 pts/2    S+   09:57   0:00 grep --color=auto gnome-calculator
+
+
+duc@duc-Inspiron-5570:/proc/7022$ cat status
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	7022
+Ngid:	0
+Pid:	7022
+PPid:	7012
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+
+
+duc@duc-Inspiron-5570:/proc/7022$ kill -STOP 7022
+[1]+  Stopped                 gnome-calculator
+
+
+duc@duc-Inspiron-5570:/proc/7022$ kill -CONT 7022
+
+duc@duc-Inspiron-5570:/proc/7022$ kill -KILL 7022
+
+
+
+
+
+
