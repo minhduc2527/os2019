@@ -1,0 +1,9 @@
+duc@duc-Inspiron-5570:~$ ps -o nlwp 3701
+NLWP
+  82
+
+
+
+duc@duc-Inspiron-5570:~$ ls /proc/3701/task |wc
+     82      82     410
+
